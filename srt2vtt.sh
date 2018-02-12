@@ -12,6 +12,26 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Inspired by
+# http://www.webvtt.org/
+#
+# Learn with the following guys:
+#
+# Detect installed program
+# https://stackoverflow.com/questions/592620/check-if-a-program-exists-from-a-bash-script#677212
+#
+# Trim whitespaces
+# https://unix.stackexchange.com/questions/102008/how-do-i-trim-leading-and-trailing-whitespace-from-each-line-of-some-output#102021
+#
+# Insert line before
+# https://stackoverflow.com/questions/487894/how-can-i-add-a-line-to-a-file-in-a-shell-script#488488
+#
+# Multiples files
+# https://stackoverflow.com/questions/19458104/how-do-i-pass-a-wildcard-parameter-to-a-bash-file/#19458175
+#
+# Charset detect
+# https://stackoverflow.com/questions/9824902/iconv-any-encoding-to-utf-8#22841847
 
 dos2unix --help foo > /dev/null 2>&1 || { echo >&2 "dos2unix is required but it's not installed. Aborting."; exit 1; }
 uchardet --help foo > /dev/null 2>&1 || { echo >&2 "uchardet is required but it's not installed. Aborting."; exit 1; }
